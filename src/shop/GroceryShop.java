@@ -28,7 +28,7 @@ public class GroceryShop {
         return null;
     }
 
-    public Bill findTheMostExpencive() {
+    public Bill findTheMostExpensive() {
         if(bills.isEmpty()) {
             System.out.println("No bills were found.");
             return null;
@@ -36,7 +36,7 @@ public class GroceryShop {
         return Collections.max(bills);
     }
 
-    public Bill findTheLeastExpencive() {
+    public Bill findTheLeastExpensive() {
         if(bills.isEmpty()) {
             System.out.println("No bills were found.");
             return null;
@@ -62,9 +62,9 @@ public class GroceryShop {
         String text;
         text = "Grocery store: " + name + ", " + address;
         text += "\n------------------------------------------------";
-        text += "\nThe most expencive bill: " + findTheMostExpencive();
+        text += "\nThe most expensive bill: " + findTheMostExpensive();
         text += "\n------------------------------------------------";
-        text += "\nThe least expencive bill: " + findTheLeastExpencive();
+        text += "\nThe least expensive bill: " + findTheLeastExpensive();
         text += "\n------------------------------------------------";
         text += "\nAverage bill price: " + averagePrice();
         text += "\n------------------------------------------------";
